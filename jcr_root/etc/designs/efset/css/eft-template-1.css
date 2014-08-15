@@ -18,7 +18,7 @@
 
 html {
 	font-size: 0.875em;
-  	line-height: 1.5em;
+	line-height: 1.5em;
 }
 body {
   font-family: Georgia, Times, "Times New Roman", serif;
@@ -38,6 +38,9 @@ a:hover {
   border-bottom: solid 1px #ffffff;
   display: inline;
   padding-bottom: 5px;
+}
+.eft-light-brown-bg {
+	background-color: #fbf4eb;
 }
 .eft-text-white {
 	color: white;
@@ -69,6 +72,9 @@ h3.eft-sec-header {
 	margin-top: 20px;
 }
 
+.eft-main-hero-img, .eft-second-hero-img {
+	width: 100%;
+}
 #logo-2 {
 	background: url(../img/logo-main-white.png) no-repeat;
 	width: 240px;
@@ -113,6 +119,7 @@ h3.eft-sec-header {
 }
 .eft-small-sect {
 	padding: 100px 0px 100px 0px;
+	font-family: helvetica77BoldCondensed, Arial, sans-serif;
 }
 
 .eft-gui-button {
@@ -121,6 +128,16 @@ h3.eft-sec-header {
 .nopadding {
    padding: 0 !important;
    margin: 0 !important;
+}
+
+.eft-bg-white {
+	background-color: white;
+}
+.eft-bg-brown {
+	background-color: #a19789;
+}
+.eft-floating-cont {
+	padding: 150px 0px 150px 0px;
 }
 
 footer {
@@ -161,43 +178,112 @@ footer .eft-foot-second span{
 }
 
 .eft-testtype-cont-white {
+	float:right;
 	background-color:#ffffff;
 	height:662px;
-	min-width:400px;
-	max-width: 550px;
+	width:480px;
 }
 .eft-testtype-cont-brown {
 	background-color:#a19789;
 	height:662px;
-	min-width:400px;
-	max-width: 550px;
+	width:480px;
 }
 
+.eft-square-img {
+	width: 100%;
+}
 
-/*ipad landscape real*/
-@media only screen and (min-width : 768px) and (max-width : 1024px) {
-	/* Square 2 cols */
+.nomargin {
+	padding: 0 !important;
+}
+/* Mini fix between ipad and desktop*/
+@media only screen and (min-width : 1024px) and (max-width : 1124px) {
 	.eft-square-img {
 		height: 350px;
-	  	-webkit-background-size: cover;
-	    -moz-background-size: cover;
-	    -o-background-size: cover;
-	    background-size: cover;
+		width: initial;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
 	}
-	.eft-sec-header {
-		font-size: 18px;
+	.eft-overflow-hidden {
+		overflow: hidden;
+	}
+	.eft-second-hero-img {
+		margin-left: -80px !important;
+		height:	350px;
+		width: initial;
+	}
+}
+
+/*ipad from portrait to landscape real*/
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+	/* Square 2 cols */
+	h1.eft-main-header {
+		font-size: 2.857em;
+		font-family: helvetica77BoldCondensed, Arial, sans-serif;
+	}
+	h2.eft-secondary-header {
+		font-size: 1.786em;
+	}
+	.eft-main-text {
+		font-size: 1.286em;
+	}
+	
+	.eft-text-latestres {
+		max-width: 320px;
+	}
+	.eft-small-sect {
+		padding: 50px 0px 50px 0px;
+	}
+	.claim {
+		margin-top: 150px;
+		max-width: 260px;
+	}
+	.eft-gui-button {
+		padding: 15px 57px 15px 57px;
+	}
+	.eft-square-img {
+		height: 350px;
+		width: initial;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	h3.eft-sec-header {
+		font-size: 1.286em;
 	}
 	.eft-text-left, .eft-text-right {
 		padding: 50px 0 50px 0;
 	}
+	.eft-overflow-hidden {
+		overflow: hidden;
+	}
+	.eft-main-hero-img {
+		margin-left: -275px !important;
+		height:	610px;
+		width: initial;
+	}
+	.eft-second-hero-img {
+		margin-left: -180px !important;
+		height:	350px;
+		width: initial;
+	}
+
+	.eft-testtype-cont-white {
+		float:none;
+	}
+	.eft-testtype-cont-brown {
+	}
 }
 
+/*ipad portrait*/
 @media only screen and (max-width : 768px) {
 	/*img {
 		width: 100%;
 	}*/
 	.eft-text-right, .eft-text-left {
-		text-align: center;
 		margin: 0 auto;
 		float: none;
 	}
