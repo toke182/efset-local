@@ -24,6 +24,9 @@ body {
   font-family: Georgia, Times, "Times New Roman", serif;
   -webkit-font-smoothing: antialiased;
 }
+.eft-overflow-hidden {
+	overflow: hidden;
+}
 
 a:hover {
 	text-decoration: none;
@@ -45,6 +48,10 @@ a:hover {
 .eft-text-white {
 	color: white;
 }
+
+.eft-text-black {
+	color: black;
+}
 .eft-text-arial {
 	font-size: 1em;
 	font-family: Arial, sans-serif;
@@ -52,6 +59,9 @@ a:hover {
 	padding-bottom: 20px;
 }
 
+.eft-subtitle {
+	font-size: 1.286em;
+}
 .eft-text-gold {
 	color: #a19789;
 }
@@ -71,27 +81,33 @@ h3.eft-sec-header {
 	font-size: 1.429em;
 	margin-top: 20px;
 }
-
+.logo-white {
+	position: absolute;
+	width: 230px;
+	height: 77px;
+	top: 47px;
+	left: 56px;
+}
 .eft-main-hero-img, .eft-second-hero-img {
 	width: 100%;
 }
-#logo-2 {
-	background: url(../img/logo-main-white.png) no-repeat;
-	width: 240px;
-	height: 0;
-	position: absolute;
-	z-index: 2000;
-	top: 55px;
-	left: 50px;
-	padding-top: 85px;
-}
+
 .button-placeholder {
 	margin-top: 45px;
 }
-.eft-gui-button {
+.eft-gui-button-white {
 	border: 1px solid #fefefe;
 	padding: 20px 70px 20px 70px;
 	color: #fefefe;
+	font-size: 0.857em;
+	margin-top: 20px;
+	font-family: helvetica75Bold, Arial, sans-serif;
+}
+
+.eft-gui-button-black {
+	border: 1px solid black;
+	padding: 20px 70px 20px 70px;
+	color: black;
 	font-size: 0.857em;
 	margin-top: 20px;
 	font-family: helvetica75Bold, Arial, sans-serif;
@@ -104,7 +120,7 @@ h3.eft-sec-header {
 .eft-text-left {
 	margin-right: 13%;
 	float: right;
-	padding: 10% 0 10% 0;
+	padding: 10% 0 0 0;
 	max-width: 420px;
 }
 .eft-text-latestres {
@@ -138,8 +154,21 @@ h3.eft-sec-header {
 }
 .eft-floating-cont {
 	padding: 150px 0px 150px 0px;
+	min-height: 660px;
+	max-width: 585px;
 }
 
+.eft-minutes-left {
+	float: left;
+	width: 100px;
+	margin-left: 118px;
+}
+
+.eft-minutes-right {
+	float: left;
+	width: 100px;
+	margin-left: 9px;
+}
 footer {
 	background-color: black;
 	padding: 78px 0px 78px 0px;
@@ -161,8 +190,8 @@ footer .eft-foot-second span{
 	z-index: 2;
 	position: absolute;
 	/*margin: 12% 0px 0px 100px;*/
-	margin-top: 12%;
-	max-width: 300px;
+	margin-top: 10%;
+	max-width: 285px;
 }
 .gutter {
 	padding: 0px 15px 0px 15px;
@@ -197,28 +226,28 @@ footer .eft-foot-second span{
 	padding: 0 !important;
 }
 /* Mini fix between ipad and desktop*/
-@media only screen and (min-width : 1024px) and (max-width : 1124px) {
-	.eft-square-img {
-		height: 350px;
-		width: initial;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
+@media only screen and (min-width : 1024px) and (max-width : 1700px) {
+	.eft-main-hero-img {
+		height: 650px;
 	}
-	.eft-overflow-hidden {
-		overflow: hidden;
+	.claim {
+		margin-left: 18%;
+		margin-top: 161px;
 	}
-	.eft-second-hero-img {
-		margin-left: -80px !important;
-		height:	350px;
-		width: initial;
+	.eft-main-hero-img {
+		width: inherit;
 	}
 }
 
+
 /*ipad from portrait to landscape real*/
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
-	/* Square 2 cols */
+	.logo-white {
+		width: 175px;
+		height: 65px;
+		top: 40px;
+		left: 40px;
+	}
 	h1.eft-main-header {
 		font-size: 2.857em;
 		font-family: helvetica77BoldCondensed, Arial, sans-serif;
@@ -237,15 +266,16 @@ footer .eft-foot-second span{
 		padding: 50px 0px 50px 0px;
 	}
 	.claim {
-		margin-top: 150px;
-		max-width: 260px;
+		margin-top: 166px;
+		max-width: 230px;
+		margin-left: 119px;
 	}
 	.eft-gui-button {
 		padding: 15px 57px 15px 57px;
 	}
 	.eft-square-img {
 		height: 350px;
-		width: initial;
+		width: 100%;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -257,11 +287,9 @@ footer .eft-foot-second span{
 	.eft-text-left, .eft-text-right {
 		padding: 50px 0 50px 0;
 	}
-	.eft-overflow-hidden {
-		overflow: hidden;
-	}
+
 	.eft-main-hero-img {
-		margin-left: -275px !important;
+		margin-left: -233px !important;
 		height:	610px;
 		width: initial;
 	}
@@ -270,21 +298,12 @@ footer .eft-foot-second span{
 		height:	350px;
 		width: initial;
 	}
-
 	.eft-testtype-cont-white {
 		float:none;
 	}
-	.eft-testtype-cont-brown {
-	}
-}
-
-/*ipad portrait*/
-@media only screen and (max-width : 768px) {
-	/*img {
-		width: 100%;
-	}*/
-	.eft-text-right, .eft-text-left {
-		margin: 0 auto;
-		float: none;
+	.eft-floating-cont {
+		padding: 150px 0px 150px 0px;
+		min-height: 578px;
+		max-width: 585px;
 	}
 }
