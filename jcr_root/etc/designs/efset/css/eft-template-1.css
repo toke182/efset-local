@@ -31,6 +31,7 @@ body {
 a:hover {
 	text-decoration: none;
 }
+
 /* NOT SPECIFIC FOR HOME PAGE*/
 .underline-text-white {
   border-bottom: solid 1px #ffffff;
@@ -168,7 +169,12 @@ h3.eft-sec-header {
 	background-color: black;
 }
 .eft-small-sect {
-	padding: 100px 0px 100px 0px;
+	padding: 94px 0px 94px 0px;
+	font-family: helvetica77BoldCondensed, Arial, sans-serif;
+}
+
+.eft-small-sect-2 {
+	padding: 92px 0 75px 0;
 	font-family: helvetica77BoldCondensed, Arial, sans-serif;
 }
 
@@ -191,11 +197,17 @@ footer {
 
 footer .eft-foot-main a {
 	color: white;
+	margin-right: 50px;
 }
 
 footer .eft-foot-second a,
 footer .eft-foot-second span{
 	color: #a19789;
+	margin-right: 40px;
+}
+
+footer .eft-foot-main{
+	margin-bottom: 30px;
 }
 /*END NOT SPECIFIC FOR HOME PAGE*/
 
@@ -241,10 +253,10 @@ footer .eft-foot-second span{
 /* Mini fix between ipad and desktop*/
 @media only screen and (min-width : 1024px) and (max-width : 1700px) {
 	.eft-main-hero-img {
-		height: 650px;
+		height: 670px;
 	}
 	.claim {
-		margin-left: 18%;
+		margin-left: 290px;
 		margin-top: 161px;
 	}
 	.eft-main-hero-img {
@@ -283,6 +295,9 @@ footer .eft-foot-second span{
 		max-width: 320px;
 	}
 	.eft-small-sect {
+		padding: 50px 0px 50px 0px;
+	}
+	.eft-small-sect-2 {
 		padding: 50px 0px 50px 0px;
 	}
 	.claim {
